@@ -1,0 +1,16 @@
+{
+  "name": "ncc-babel-bug-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nwalters512/ncc-babel-bug-repro.git",
+  "author": "Nathan Walters <nwalters@nerdwallet.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:working": "ncc build working.js -o dist-working/ --debug",
+    "build:failing": "ncc build failing.js -o dist-failing/ --debug"
+  },
+  "dependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}

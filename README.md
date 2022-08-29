@@ -6,12 +6,6 @@ This PR reproduces a bug with `@vercel/ncc` where it's unable to correctly trace
 
 Run `yarn` to install `@vercel/ncc`.
 
-Run the following to simulate installing two dependencies:
-
-```bash
-cp -r node_modules_demo/@nwalters512 node_modules
-```
-
 Run `yarn build:working` and observe how `worker.js` is correctly copied to `dist-working/worker.js`:
 
 ```
